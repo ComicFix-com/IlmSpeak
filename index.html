@@ -5,19 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium Hadith of the Day</title>
-  
+  <title>ILM Speak</title>
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="ilmspeak.jpeg" type="image/x-icon">
+
   <!-- FontAwesome Icons -->
   <script src="https://kit.fontawesome.com/7c3e43e755.js" crossorigin="anonymous"></script>
-  
+  <link rel="icon" href="ilmspeak.jpeg" type="image/x-icon">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Meta tags for PWA -->
+  <meta name="theme-color" content="#004d00">
   
-  <!-- Google Translate -->
-  
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch((error) => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+
+  <!-- Google Translate Widget -->
 </head>
 
 <body>
