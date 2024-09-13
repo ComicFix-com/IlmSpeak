@@ -1,0 +1,21 @@
+{
+  "short_name": "IlmSpeak",
+  "name": "IlmSpeak - Enlighten Your Mind with Knowledge and Speech",
+  "description": "IlmSpeak brings Islamic teachings to life ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#004d00",
+  "icons": [
+    {
+      "src": "ilmspeak.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "ilmspeak.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
