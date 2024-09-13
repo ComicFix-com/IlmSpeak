@@ -1,0 +1,128 @@
+/* Reset styles */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li, form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f8f9fa, #e2e2e2);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px; /* Max width to control layout */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.header {
+  font-size: 28px; /* Adjust font size for better mobile viewing */
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textarea {
+  text-align: center;
+}
+
+.hadis {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /* Adjust font size for better readability */
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column; /* Stack controls vertically on mobile */
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.controls li {
+  margin: 10px;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.newb {
+  background-color: #6f42c1;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.newb:hover {
+  background-color: #5a2a8a;
+}
+
+/* Google Translate Widget */
+.translate-widget {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    font-size: 24px; /* Adjust for smaller screens */
+  }
+
+  .hadas {
+    font-size: 16px; /* Adjust for smaller screens */
+  }
+
+  .feature {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .controls li {
+    margin: 8px; /* Reduce spacing for smaller screens */
+  }
+
+  .newb {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+}
